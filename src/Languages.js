@@ -6,7 +6,7 @@ export default class Language extends React.Component {
         title:""
     }
 
-    displayTitle = (event) => {
+    displayLanguages = (event) => {
         console.log(event.target.id)
         if (event.target.id == "one"){
             this.setState({
@@ -39,15 +39,15 @@ export default class Language extends React.Component {
                         <div class="tile">
                             <div class="tile is-4 is-vertical is-parent">
                                 <div class="tile is-child box" id="one" 
-                                onMouseEnter={this.displayTitle}>
+                                onMouseEnter={this.displayLanguages}>
                                 <p class="title one">HTML</p>
                                 </div>
                                 <div class="tile is-child box" id="two" 
-                                onMouseEnter={this.displayTitle}>
+                                onMouseEnter={this.displayLanguages}>
                                 <p class="title">JavaScript</p>
                                 </div>
                                 <div class="tile is-child box" id="three" 
-                                onMouseEnter={this.displayTitle}>
+                                onMouseEnter={this.displayLanguages}>
                                 <p class="title">Python</p>
                                 </div>
                             </div>
