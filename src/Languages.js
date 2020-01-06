@@ -10,21 +10,21 @@ export default class Language extends React.Component {
         console.log(event.target.id)
         if (event.target.id == "one"){
             this.setState({
-                title: "One",
+                title: "HTML",
                 content: "lorem ipsum"
             })
         }
 
         else if (event.target.id == "two") {
             this.setState({
-                title:"Two",
+                title:"JavaScript",
                 content: "kawabunga"
             })
         }
 
         else{
             this.setState({
-                title:"Three",
+                title:"Python",
                 content:"if you were here"
             })
         }
@@ -33,25 +33,33 @@ export default class Language extends React.Component {
     render (){
     return(    
         <div>
-        <div class="tile is-ancestor">
-        <div class="tile is-4 is-vertical is-parent">
-            <div class="tile is-child box" id="one" onMouseEnter={this.displayTitle}>
-            <p class="title one">One</p>
+            <div class="tile is-ancestor box">
+                <div class="tile is-vertical">
+                    <div class="tile is-parent title">Languages</div>
+                        <div class="tile">
+                            <div class="tile is-4 is-vertical is-parent">
+                                <div class="tile is-child box" id="one" 
+                                onMouseEnter={this.displayTitle}>
+                                <p class="title one">HTML</p>
+                                </div>
+                                <div class="tile is-child box" id="two" 
+                                onMouseEnter={this.displayTitle}>
+                                <p class="title">JavaScript</p>
+                                </div>
+                                <div class="tile is-child box" id="three" 
+                                onMouseEnter={this.displayTitle}>
+                                <p class="title">Python</p>
+                                </div>
+                            </div>
+                            <div class="tile is-parent">
+                                <div class="tile is-child box">
+                                <p class="title">{this.state.title}</p>
+                                <p>{this.state.content}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
-            <div class="tile is-child box" id="two" onMouseEnter={this.displayTitle}>
-            <p class="title">Two</p>
-            </div>
-            <div class="tile is-child box" id="three" onMouseEnter={this.displayTitle}>
-            <p class="title">Three</p>
-            </div>
-        </div>
-        <div class="tile is-parent">
-            <div class="tile is-child box">
-            <p class="title">{this.state.title}</p>
-            <p>{this.state.content}</p>
-            </div>
-        </div>
-        </div>
         </div>
     )};
 }

@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import Hero from "./Hero.js"
 import Language from "./Languages.js";
+import Education from "./Education.js"
 
 import 'bulma/css/bulma.css';
 
@@ -17,6 +18,9 @@ function App() {
 
       <section>
       <Language/>
+      </section>
+      <section>
+      <Education/>
       </section>
     </div>
   );
