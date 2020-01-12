@@ -33,7 +33,7 @@ export default class Language extends React.Component {
     render (){
     return(    
         <div>
-            <div class="tile is-ancestor box">
+            <div class="tile is-ancestor box" className="background">
                 <div class="tile is-vertical">
                     <div class="tile is-parent title">Languages</div>
                         <div class="tile">

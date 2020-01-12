@@ -12,7 +12,7 @@ import heroImage from "./images/heroImage.jpg";
 function App() {
   return (
     <div>
-      <section className="App" class="hero is-fullheight image">
+      <section className="App" class="hero">
       <Hero/>
       </section>
 

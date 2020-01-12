@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './Education.css';
 
 export default class Education extends React.Component {
 
@@ -30,7 +30,7 @@ export default class Education extends React.Component {
 
     render (){
     return(   
-        <div> 
+        <div className="Background"> 
             
             <div class="tile is-ancestor box">
                 <div class="tile is-vertical">

@@ -37,15 +37,23 @@
   }
 }
 
-.hero-image {
-  background-image: "./images/heroImage.jpg";
-  height: 1000px;
-}
+
 
 .color{
-  background-color:red;
+  color:red;
 }
 
 .customBox1{
   height:500px;
+}
+
+.background {
+  background-color: red !important;
+}
+
+body {
+  background-image: url("images/heroImage.jpg");
+  width: 100%;
+  object-fit: contain;
+  
 }
